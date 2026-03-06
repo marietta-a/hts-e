@@ -35,7 +35,7 @@ const Portfolio = () => {
       title: 'Modern Residential Complex',
       category: 'residential',
       location: 'Nkwen, Bamenda',
-      image: 'https://picsum.photos/seed/res1/1000/800',
+      image: 'https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?auto=format&fit=crop&w=1000&q=80',
       desc: 'A 12-unit luxury apartment complex featuring sustainable design and modern amenities.',
       detailedDesc: 'This project involved the complete design and construction of a high-end residential complex in the heart of Nkwen. The structure incorporates energy-efficient lighting, rainwater harvesting systems, and premium interior finishes. Our team managed everything from site preparation to final landscaping.',
       completionDate: 'December 2025',
@@ -46,7 +46,7 @@ const Portfolio = () => {
       title: 'Commercial Plaza',
       category: 'commercial',
       location: 'Commercial Avenue, Bamenda',
-      image: 'https://picsum.photos/seed/comm1/1000/800',
+      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80',
       desc: 'A multi-story commercial hub with retail spaces and corporate offices.',
       detailedDesc: 'Located on the busiest street in Bamenda, this commercial plaza was designed to maximize retail visibility and provide professional office environments. The building features a modern glass facade, high-speed elevators, and a flexible floor plan to accommodate various business needs.',
       completionDate: 'August 2025',
@@ -57,7 +57,7 @@ const Portfolio = () => {
       title: 'Bridge Reconstruction',
       category: 'infrastructure',
       location: 'Mezam Division',
-      image: 'https://picsum.photos/seed/infra1/1000/800',
+      image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80',
       desc: 'Critical infrastructure project enhancing connectivity and safety for the local community.',
       detailedDesc: 'This infrastructure project focused on replacing a deteriorating bridge with a modern, reinforced concrete structure. The new bridge was designed to withstand heavy seasonal rains and increased traffic loads, significantly improving local trade routes and community safety.',
       completionDate: 'June 2024',
@@ -68,7 +68,7 @@ const Portfolio = () => {
       title: 'Industrial Warehouse',
       category: 'industrial',
       location: 'Industrial Zone, Bamenda',
-      image: 'https://picsum.photos/seed/indus1/1000/800',
+      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80',
       desc: 'Large-scale storage facility with advanced logistics integration.',
       detailedDesc: 'Designed for a major regional distributor, this warehouse features 5,000 square meters of storage space with specialized temperature-controlled zones. The project included the installation of advanced fire suppression systems and heavy-duty flooring suitable for industrial machinery.',
       completionDate: 'January 2025',
@@ -79,7 +79,7 @@ const Portfolio = () => {
       title: 'Luxury Villa',
       category: 'residential',
       location: 'Up Station, Bamenda',
-      image: 'https://picsum.photos/seed/res2/1000/800',
+      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80',
       desc: 'Custom-built private residence with premium finishes and landscaping.',
       detailedDesc: 'A bespoke architectural masterpiece tailored to the client\'s specific lifestyle. This villa combines traditional Cameroonian aesthetics with modern luxury. It features an infinity pool, smart home automation, and extensive outdoor living spaces designed for the local climate.',
       completionDate: 'November 2024',
@@ -90,7 +90,7 @@ const Portfolio = () => {
       title: 'Educational Center',
       category: 'commercial',
       location: 'Bambili',
-      image: 'https://picsum.photos/seed/edu1/1000/800',
+      image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1000&q=80',
       desc: 'Modern learning facility designed for collaboration and innovation.',
       detailedDesc: 'This educational center was built to provide a state-of-the-art learning environment for students in Bambili. The design emphasizes natural light and open spaces to foster creativity. It includes specialized laboratories, a digital library, and multi-purpose lecture halls.',
       completionDate: 'September 2024',
@@ -107,7 +107,7 @@ const Portfolio = () => {
       <PageHeader 
         title={t('nav.portfolio')} 
         subtitle="Showcasing Our Commitment to Quality and Innovation"
-        image="https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=2070"
+        image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1920&q=80"
       />
 
       <section className="py-24 bg-white">

@@ -10,7 +10,7 @@ interface PageHeaderProps {
 const PageHeader: React.FC<PageHeaderProps> = ({ 
   title, 
   subtitle, 
-  image = "https://picsum.photos/seed/header-default/1920/1080" 
+  image = "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80" 
 }) => {
   return (
     <section className="relative py-32 flex items-center justify-center text-white text-center overflow-hidden">

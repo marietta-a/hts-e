@@ -46,7 +46,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center text-white">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://picsum.photos/seed/construction-hero/1920/1080"
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80"
             alt="Construction background"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -179,8 +179,8 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src="https://picsum.photos/seed/construction-site/1200/800"
-                alt="Construction site"
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+                alt="Building construction project"
                 className="rounded-3xl shadow-2xl"
                 referrerPolicy="no-referrer"
               />

@@ -68,7 +68,7 @@ const Contact = () => {
       <PageHeader 
         title={t('nav.contact')} 
         subtitle="Get in Touch with Our Expert Engineering Team"
-        image="https://picsum.photos/seed/contact-header/1920/1080"
+        image="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80"
       />
 
       <section className="py-24 bg-white">
