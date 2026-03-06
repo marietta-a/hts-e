@@ -1,0 +1,7 @@
+{
+  "name": "hts-e platform",
+  "description": "A modern, professional construction company specializing in design, build, and consultancy services.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
