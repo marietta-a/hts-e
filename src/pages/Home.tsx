@@ -46,7 +46,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center text-white">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=2070"
+            src="https://picsum.photos/seed/construction-hero/1920/1080"
             alt="Construction background"
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -61,12 +61,13 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="mb-8 flex justify-center"
           >
-            <div className="w-24 h-24 bg-white rounded-2xl p-3 shadow-2xl border border-white/20">
+            <div className="w-24 h-24 bg-blue-600 rounded-2xl flex items-center justify-center shadow-2xl border border-white/20 relative overflow-hidden">
+              <Building2 className="text-white w-12 h-12" />
               <img 
                 src="/logo.png" 
                 alt="HTS-E Logo" 
-                className="w-full h-full object-contain"
-                onError={(e) => (e.currentTarget.parentElement!.style.display = 'none')}
+                className="absolute inset-0 w-full h-full object-contain bg-white"
+                onError={(e) => (e.currentTarget.style.display = 'none')}
               />
             </div>
           </motion.div>
@@ -178,7 +179,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=2070"
+                src="https://picsum.photos/seed/construction-site/1200/800"
                 alt="Construction site"
                 className="rounded-3xl shadow-2xl"
                 referrerPolicy="no-referrer"

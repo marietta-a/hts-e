@@ -16,7 +16,7 @@ const Blog = () => {
       date: 'March 15, 2026',
       author: 'Engr. Nfor',
       category: 'Innovation',
-      image: 'https://images.unsplash.com/photo-1518005020251-582c7b975ee5?auto=format&fit=crop&q=80&w=1000'
+      image: 'https://picsum.photos/seed/blog1/1000/600'
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const Blog = () => {
       date: 'March 10, 2026',
       author: 'Arch. Tabi',
       category: 'Guides',
-      image: 'https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=1000'
+      image: 'https://picsum.photos/seed/blog2/1000/600'
     },
     {
       id: 3,
@@ -34,7 +34,7 @@ const Blog = () => {
       date: 'March 05, 2026',
       author: 'Engr. Fru',
       category: 'Infrastructure',
-      image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1000'
+      image: 'https://picsum.photos/seed/blog3/1000/600'
     },
     {
       id: 4,
@@ -43,7 +43,7 @@ const Blog = () => {
       date: 'February 28, 2026',
       author: 'Admin',
       category: 'Technology',
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1000'
+      image: 'https://picsum.photos/seed/blog4/1000/600'
     }
   ];
 
@@ -52,7 +52,7 @@ const Blog = () => {
       <PageHeader 
         title={t('nav.blog')} 
         subtitle="Insights, News, and Expert Tips from the Construction World"
-        image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2070"
+        image="https://picsum.photos/seed/blog-header/1920/1080"
       />
 
       <section className="py-24 bg-white">

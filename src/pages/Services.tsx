@@ -20,7 +20,7 @@ const Services = () => {
         'Infrastructural Development',
         'Concept to Completion Management'
       ],
-      image: 'https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=1000'
+      image: 'https://picsum.photos/seed/design/1000/600'
     },
     {
       id: 'contractors',
@@ -33,7 +33,7 @@ const Services = () => {
         'Public Infrastructure Projects',
         'Renovation & Remodeling'
       ],
-      image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1000'
+      image: 'https://picsum.photos/seed/construction/1000/600'
     },
     {
       id: 'consultancy',
@@ -46,7 +46,7 @@ const Services = () => {
         'Engineering Advisory',
         'Cost Estimation & Budgeting'
       ],
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1000'
+      image: 'https://picsum.photos/seed/consult/1000/600'
     },
     {
       id: 'real-estate',
@@ -59,7 +59,7 @@ const Services = () => {
         'Residential Estates',
         'Commercial Space Development'
       ],
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000'
+      image: 'https://picsum.photos/seed/realestate/1000/600'
     },
     {
       id: 'procurement',
@@ -72,7 +72,7 @@ const Services = () => {
         'Logistics & Distribution',
         'Assorted Engineering Tools'
       ],
-      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=1000'
+      image: 'https://picsum.photos/seed/logistics/1000/600'
     }
   ];
 
@@ -81,7 +81,7 @@ const Services = () => {
       <PageHeader 
         title={t('nav.services')} 
         subtitle="Comprehensive Engineering and Construction Solutions"
-        image="https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=2070"
+        image="https://picsum.photos/seed/services-header/1920/1080"
       />
 
       <section className="py-24 bg-white">

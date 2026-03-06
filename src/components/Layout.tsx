@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
-import { Menu, X, Phone, Mail, MapPin, Globe, MessageCircle } from 'lucide-react';
+import { Menu, X, Phone, Mail, MapPin, Globe, MessageCircle, Building2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 const Navbar = () => {
@@ -30,11 +30,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center space-x-3">
-            <div className={`relative w-12 h-12 overflow-hidden rounded-lg bg-white p-1 shadow-sm transition-transform hover:scale-105 ${isScrolled ? 'border border-gray-100' : 'border border-white/20'}`}>
+            <div className={`relative w-12 h-12 overflow-hidden rounded-lg bg-blue-600 flex items-center justify-center shadow-sm transition-transform hover:scale-105 ${isScrolled ? 'border border-gray-100' : 'border border-white/20'}`}>
+              <Building2 className="text-white w-8 h-8" />
               <img 
                 src="/logo.png" 
                 alt="HTS-E Logo" 
-                className="w-full h-full object-contain"
+                className="absolute inset-0 w-full h-full object-contain bg-white"
                 onError={(e) => (e.currentTarget.style.display = 'none')}
               />
             </div>
@@ -139,11 +140,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="w-16 h-16 bg-white rounded-xl p-2 shadow-lg">
+              <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg relative overflow-hidden">
+                <Building2 className="text-white w-10 h-10" />
                 <img 
                   src="/logo.png" 
                   alt="HTS-E Logo" 
-                  className="w-full h-full object-contain"
+                  className="absolute inset-0 w-full h-full object-contain bg-white"
                   onError={(e) => (e.currentTarget.style.display = 'none')}
                 />
               </div>

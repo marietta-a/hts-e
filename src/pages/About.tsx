@@ -30,7 +30,7 @@ const About = () => {
       <PageHeader 
         title={t('nav.about')} 
         subtitle="Excellence in Engineering and Construction since 2015"
-        image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=2070"
+        image="https://picsum.photos/seed/about-header/1920/1080"
       />
 
       <section className="py-24 bg-white">
@@ -62,13 +62,13 @@ const About = () => {
               className="grid grid-cols-2 gap-4"
             >
               <img 
-                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=1000" 
+                src="https://picsum.photos/seed/engineering/800/800" 
                 alt="Engineering" 
                 className="rounded-2xl shadow-lg h-64 w-full object-cover"
                 referrerPolicy="no-referrer"
               />
               <img 
-                src="https://images.unsplash.com/photo-1503387762-592dee58c460?auto=format&fit=crop&q=80&w=1000" 
+                src="https://picsum.photos/seed/construction-detail/800/800" 
                 alt="Construction" 
                 className="rounded-2xl shadow-lg h-64 w-full object-cover mt-8"
                 referrerPolicy="no-referrer"
