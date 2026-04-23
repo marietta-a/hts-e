@@ -75,7 +75,7 @@ const translations: Record<Language, any> = {
     contact: {
       title: 'Contact Us',
       address: 'NEW ROAD NKWEN, BAMENDA',
-      phone: '678 723 844 / 655 660 340',
+      phone: '+237 677210907',
       email: 'info@hts-e.com',
       form: {
         name: 'Full Name',
@@ -123,7 +123,7 @@ const translations: Record<Language, any> = {
     contact: {
       title: 'Contactez-nous',
       address: 'NEW ROAD NKWEN, BAMENDA',
-      phone: '678 723 844 / 655 660 340',
+      phone: '+237 655 660 304 / +237 677 210 901',
       email: 'info@hts-e.com',
       form: {
         name: 'Nom Complet',

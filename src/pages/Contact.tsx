@@ -40,13 +40,14 @@ const Contact = () => {
     {
       icon: <Phone className="w-6 h-6 text-blue-600" />,
       title: 'Phone Numbers',
-      details: ['678 723 844', '655 660 340'],
+      details: ['+237 677210907'],
       desc: 'Available Mon-Sat, 8am-6pm'
     },
     {
       icon: <Mail className="w-6 h-6 text-blue-600" />,
       title: 'Email Address',
-      details: ['info@hts-e.com', 'contact@hts-e.com'],
+      // details: ['info@hts-e.com', 'contact@hts-e.com'],
+      details: ['msquad@gmail.com'],
       desc: 'We respond within 24 hours'
     },
     {

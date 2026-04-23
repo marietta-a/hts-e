@@ -54,14 +54,14 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: 'Bridge Reconstruction',
-      category: 'infrastructure',
+      title: 'Mixed-Use Development',
+      category: 'commercial',
       location: 'Mezam Division',
       image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80',
-      desc: 'Critical infrastructure project enhancing connectivity and safety for the local community.',
-      detailedDesc: 'This infrastructure project focused on replacing a deteriorating bridge with a modern, reinforced concrete structure. The new bridge was designed to withstand heavy seasonal rains and increased traffic loads, significantly improving local trade routes and community safety.',
+      desc: 'Large-scale mixed-use development project featuring office spaces and urban residences.',
+      detailedDesc: 'This project involved the structural engineering and construction of a major mixed-use tower. The building combines commercial office floors with high-end residential units, featuring a reinforced concrete core and sustainable ventilation systems. Our team oversaw the entire structural development phase.',
       completionDate: 'June 2024',
-      features: ['Reinforced Concrete', 'Increased Load Capacity', 'Flood Resilience', 'Pedestrian Walkways']
+      features: ['Reinforced Concrete Core', 'Commercial & Residential Space', 'Modern HVAC Systems', 'Urban Integration']
     },
     {
       id: 4,
