@@ -30,28 +30,17 @@ const Portfolio = () => {
   ];
 
   const projects: Project[] = [
-    {
-      id: 1,
-      title: 'Modern Residential Complex',
-      category: 'residential',
-      location: 'Nkwen, Bamenda',
-      image: 'https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?auto=format&fit=crop&w=1000&q=80',
-      desc: 'A 12-unit luxury apartment complex featuring sustainable design and modern amenities.',
-      detailedDesc: 'This project involved the complete design and construction of a high-end residential complex in the heart of Nkwen. The structure incorporates energy-efficient lighting, rainwater harvesting systems, and premium interior finishes. Our team managed everything from site preparation to final landscaping.',
-      completionDate: 'December 2025',
-      features: ['12 Luxury Units', 'Sustainable Design', 'Underground Parking', '24/7 Security System']
-    },
-    {
-      id: 2,
-      title: 'Commercial Plaza',
-      category: 'commercial',
-      location: 'Commercial Avenue, Bamenda',
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80',
-      desc: 'A multi-story commercial hub with retail spaces and corporate offices.',
-      detailedDesc: 'Located on the busiest street in Bamenda, this commercial plaza was designed to maximize retail visibility and provide professional office environments. The building features a modern glass facade, high-speed elevators, and a flexible floor plan to accommodate various business needs.',
-      completionDate: 'August 2025',
-      features: ['Retail Spaces', 'Corporate Offices', 'Glass Facade', 'Modern Elevators']
-    },
+    // {
+    //   id: 2,
+    //   title: 'Commercial Plaza',
+    //   category: 'commercial',
+    //   location: 'Commercial Avenue, Bamenda',
+    //   image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80',
+    //   desc: 'A multi-story commercial hub with retail spaces and corporate offices.',
+    //   detailedDesc: 'Located on the busiest street in Bamenda, this commercial plaza was designed to maximize retail visibility and provide professional office environments. The building features a modern glass facade, high-speed elevators, and a flexible floor plan to accommodate various business needs.',
+    //   completionDate: 'August 2025',
+    //   features: ['Retail Spaces', 'Corporate Offices', 'Glass Facade', 'Modern Elevators']
+    // },
     {
       id: 3,
       title: 'Mixed-Use Development',
@@ -76,26 +65,15 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: 'Luxury Villa',
+      title: 'Ntasia Luxurious Villa',
       category: 'residential',
-      location: 'Up Station, Bamenda',
-      image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80',
-      desc: 'Custom-built private residence with premium finishes and landscaping.',
-      detailedDesc: 'A bespoke architectural masterpiece tailored to the client\'s specific lifestyle. This villa combines traditional Cameroonian aesthetics with modern luxury. It features an infinity pool, smart home automation, and extensive outdoor living spaces designed for the local climate.',
-      completionDate: 'November 2024',
-      features: ['Infinity Pool', 'Smart Home Tech', 'Custom Landscaping', 'Outdoor Living Area']
+      location: 'Ntasia Bamendankwe, Bamenda',
+      image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=1000&q=80',
+      desc: 'Modern custom-built private residence with an infinity pool and signature spiral staircase.',
+      detailedDesc: 'This architectural masterpiece in Ntasia Bamendankwe represents the pinnacle of modern residential construction. The villa features a striking white facade with stone-textured accents, a private swimming pool, and a unique spiral exterior staircase. The design prioritizes open-air living with extensive balconies and integrated green spaces.',
+      completionDate: 'May 2024',
+      features: ['Infinity Swimming Pool', 'Spiral Outdoor Staircase', 'Modern White Facade', 'Stone-Textured Accents', 'Lush Landscape Design']
     },
-    {
-      id: 6,
-      title: 'Educational Center',
-      category: 'commercial',
-      location: 'Bambili',
-      image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=1000&q=80',
-      desc: 'Modern learning facility designed for collaboration and innovation.',
-      detailedDesc: 'This educational center was built to provide a state-of-the-art learning environment for students in Bambili. The design emphasizes natural light and open spaces to foster creativity. It includes specialized laboratories, a digital library, and multi-purpose lecture halls.',
-      completionDate: 'September 2024',
-      features: ['Specialized Labs', 'Digital Library', 'Natural Lighting', 'Flexible Classrooms']
-    }
   ];
 
   const filteredProjects = filter === 'all' 

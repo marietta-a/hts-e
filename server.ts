@@ -3,6 +3,9 @@ import { createServer as createViteServer } from "vite";
 import Database from "better-sqlite3";
 import path from "path";
 import { fileURLToPath } from "url";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -11,14 +14,6 @@ const db = new Database("database.db");
 
 // Initialize database
 db.exec(`
-  CREATE TABLE IF NOT EXISTS contacts (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT,
-    email TEXT,
-    phone TEXT,
-    message TEXT,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
-  );
   CREATE TABLE IF NOT EXISTS newsletter (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     email TEXT UNIQUE,
@@ -33,18 +28,6 @@ async function startServer() {
   app.use(express.json());
 
   // API routes
-  app.post("/api/contact", (req, res) => {
-    const { name, email, phone, message } = req.body;
-    try {
-      const stmt = db.prepare("INSERT INTO contacts (name, email, phone, message) VALUES (?, ?, ?, ?)");
-      stmt.run(name, email, phone, message);
-      res.json({ success: true, message: "Message received" });
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ success: false, message: "Error saving message" });
-    }
-  });
-
   app.post("/api/newsletter", (req, res) => {
     const { email } = req.body;
     try {

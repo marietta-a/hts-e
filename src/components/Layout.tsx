@@ -161,11 +161,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 text-blue-100">
                 <Phone size={18} className="text-blue-400" />
-                <span>+237 677210907</span>
+                <span>+237 655660340</span>
               </div>
               <div className="flex items-center space-x-3 text-blue-100">
                 <Mail size={18} className="text-blue-400" />
-                <span>info@hts-e.com</span>
+                <span>lydiaguyy@gmail.com</span>
               </div>
             </div>
           </div>
@@ -205,8 +205,8 @@ const Footer = () => {
         <div className="border-t border-blue-900 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-blue-300">
           <p>{t('footer.rights')}</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-white">Privacy Policy</a>
-            <a href="#" className="hover:text-white">Terms of Service</a>
+            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
@@ -216,7 +216,7 @@ const Footer = () => {
 
 const WhatsAppButton = () => (
   <a
-    href="https://wa.me/+237677210907"
+    href="https://wa.me/+237655660340"
     target="_blank"
     rel="noopener noreferrer"
     className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all hover:scale-110 active:scale-95 group"

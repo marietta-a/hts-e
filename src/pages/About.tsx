@@ -99,33 +99,12 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section Placeholder */}
+      {/* Team Section Placeholder - Hidden as requested */}
+      {/* 
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Leadership Team</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Driven by passion and expertise, our team is committed to delivering excellence in every project.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="group">
-                <div className="relative overflow-hidden rounded-2xl mb-4 aspect-[4/5]">
-                  <img 
-                    src={`https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1000`} 
-                    alt="Team member" 
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
-                    referrerPolicy="no-referrer"
-                  />
-                </div>
-                <h4 className="text-xl font-bold text-gray-900">Executive Member {i}</h4>
-                <p className="text-blue-600 font-medium">Senior Engineer</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        ...
       </section>
+      */}
     </div>
   );
 };

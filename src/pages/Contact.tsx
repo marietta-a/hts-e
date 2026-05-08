@@ -14,40 +14,42 @@ const Contact = () => {
   });
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus('loading');
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
-      const data = await res.json();
-      if (data.success) {
-        setStatus('success');
-        setFormData({ name: '', email: '', phone: '', message: '' });
-      } else {
-        setStatus('error');
-      }
-    } catch (err) {
-      console.error(err);
-      setStatus('error');
-    }
+    
+    const companyEmail = 'lydiaguyy@gmail.com';
+    const subject = encodeURIComponent('HTS-E service request');
+    const bodyText = `
+Name: ${formData.name}
+Phone: ${formData.phone}
+Email: ${formData.email}
+
+Message:
+${formData.message}
+    `.trim();
+    
+    const body = encodeURIComponent(bodyText);
+    const mailtoUrl = `mailto:${companyEmail}?subject=${subject}&body=${body}`;
+    
+    window.location.href = mailtoUrl;
+    
+    // Set success state to clear the form and show the success message
+    setStatus('success');
+    setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
   const contactInfo = [
     {
       icon: <Phone className="w-6 h-6 text-blue-600" />,
       title: 'Phone Numbers',
-      details: ['+237 677210907'],
+      details: ['+237 655660340'],
       desc: 'Available Mon-Sat, 8am-6pm'
     },
     {
       icon: <Mail className="w-6 h-6 text-blue-600" />,
       title: 'Email Address',
       // details: ['info@hts-e.com', 'contact@hts-e.com'],
-      details: ['msquad@gmail.com'],
+      details: ['lydiaguyy@gmail.com'],
       desc: 'We respond within 24 hours'
     },
     {
