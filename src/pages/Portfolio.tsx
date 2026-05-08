@@ -254,19 +254,32 @@ const Portfolio = () => {
             <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full"></div>
           </div>
           <div className="flex flex-col md:flex-row gap-8">
-            {[1, 2, 3].map((i) => (
+            {[
+              {
+                name: 'Proprietor, Ntasia Villa',
+                role: 'Owner of Ntasia Luxurious Villa',
+                initials: 'NV',
+                text: 'HTS-E transformed my vision for a modern residence in Bamendankwe into a stunning reality. The infinity pool and architectural spiral staircase are exactly what I dreamed of. Their attention to structural integrity and aesthetic detail is truly impressive.'
+              },
+              {
+                name: 'Eurice Nsihiti',
+                role: 'Homeowner',
+                initials: 'EN',
+                text: 'Building a home can be stressful, but HTS-E made the process seamless and professional. Their team\'s expertise in residential engineering gave me complete confidence in the durability and safety of my new home. I highly recommend them for any homeowner looking for excellence.'
+              }
+            ].map((testimonial, i) => (
               <div key={i} className="bg-white p-8 rounded-3xl shadow-sm flex-1 border border-gray-100 italic text-gray-600 relative">
                 <div className="text-blue-200 text-6xl absolute top-4 left-4 font-serif">"</div>
                 <p className="relative z-10 mb-6">
-                  HTS-E delivered our commercial plaza ahead of schedule and with exceptional attention to detail. Their professionalism is unmatched in Bamenda.
+                  {testimonial.text}
                 </p>
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center font-bold text-blue-600">
-                    JD
+                    {testimonial.initials}
                   </div>
                   <div>
-                    <p className="text-gray-900 font-bold not-italic">John Doe</p>
-                    <p className="text-xs text-gray-500 not-italic">CEO, Commercial Hub Ltd</p>
+                    <p className="text-gray-900 font-bold not-italic">{testimonial.name}</p>
+                    <p className="text-xs text-gray-500 not-italic">{testimonial.role}</p>
                   </div>
                 </div>
               </div>
