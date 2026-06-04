@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import PageHeader from '../components/PageHeader';
 import { useLanguage } from '../context/LanguageContext';
 import { motion, AnimatePresence } from 'motion/react';
-import { Filter, ExternalLink, Search, X, MapPin, Calendar as CalendarIcon, CheckCircle2 } from 'lucide-react';
+import { Filter, ExternalLink, Search, X, MapPin, Calendar as CalendarIcon, CheckCircle2, Smartphone, Code } from 'lucide-react';
+import hymnalImage from '../assets/images/cameroon_hymnal_story_1780574996382.png';
 
 interface Project {
   id: number;
@@ -14,6 +15,7 @@ interface Project {
   detailedDesc: string;
   completionDate: string;
   features: string[];
+  links?: { name: string; url: string; platform: string }[];
 }
 
 const Portfolio = () => {
@@ -26,7 +28,8 @@ const Portfolio = () => {
     { id: 'residential', name: 'Residential' },
     { id: 'commercial', name: 'Commercial' },
     { id: 'infrastructure', name: 'Infrastructure' },
-    { id: 'industrial', name: 'Industrial' }
+    { id: 'industrial', name: 'Industrial' },
+    { id: 'software', name: 'Software Products' }
   ];
 
   const projects: Project[] = [
@@ -74,6 +77,35 @@ const Portfolio = () => {
       completionDate: 'May 2024',
       features: ['Infinity Swimming Pool', 'Spiral Outdoor Staircase', 'Modern White Facade', 'Stone-Textured Accents', 'Lush Landscape Design']
     },
+    {
+      id: 6,
+      title: 'Cameroon Hymnal App',
+      category: 'software',
+      location: 'Google Play & Apple App Store',
+      image: hymnalImage,
+      desc: 'A pro bono, offline-first hymnal application built for Catholic communities, crossing over 10,000 downloads.',
+      detailedDesc: 'Built out of a desire to simplify the worship experience for church members across Cameroon, this open-source app eliminates repetitive logins and authentication gates. Powered by Flutter, it delivers lightning-fast search vectors and a clean design that allows users to access hymnal lyrics instantly offline in church environments.',
+      completionDate: 'November 2025',
+      features: ['Offline-First Lyrics Database', 'No Sign-In Required', 'Fast Global Search', 'Fully Open-Sourced Code', 'Flutter Mobile Architecture'],
+      links: [
+        { name: 'Google Play Store', url: 'https://play.google.com/store/apps/details?id=com.hymnal.cameroon', platform: 'Android' },
+        { name: 'Apple App Store', url: 'https://apps.apple.com/us/app/cameroon-hymnal/id6762371454', platform: 'iOS' }
+      ]
+    },
+    {
+      id: 7,
+      title: 'Radiant Glow',
+      category: 'software',
+      location: 'Google Play Store',
+      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1000&q=80',
+      desc: 'A top-performing holistic wellness and personalized diet assistant app published for Android users.',
+      detailedDesc: 'Radiant Glow is a beautiful and elegant health companion mobile application. It streamlines personalized nutritional guidance, interactive food tracking, and wellness routines to promote a balanced, radiant lifestyle. Devised with performance in mind, it utilizes clean client-side state engines and secure data architectures.',
+      completionDate: 'February 2026',
+      features: ['Personalized Nutrition Guides', 'Interactive Lifestyle Tracking', 'Responsive Material Design', 'High-Performance Local Persistence'],
+      links: [
+        { name: 'Google Play Store', url: 'https://play.google.com/store/apps/details?id=com.radiantglow', platform: 'Android' }
+      ]
+    }
   ];
 
   const filteredProjects = filter === 'all' 
@@ -230,6 +262,29 @@ const Portfolio = () => {
                     ))}
                   </div>
                 </div>
+
+                {selectedProject.links && selectedProject.links.length > 0 && (
+                  <div className="mt-8 pt-6 border-t border-gray-100 animate-fade-in">
+                    <h4 className="text-lg font-bold text-gray-900 mb-4 flex items-center gap-2">
+                      <Smartphone className="text-blue-600" size={20} />
+                      Get the App / Live Product
+                    </h4>
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      {selectedProject.links.map((link, idx) => (
+                        <a
+                          key={idx}
+                          href={link.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white font-bold px-5 py-3 rounded-xl transition-all shadow-md group/link text-sm gap-2"
+                        >
+                          <span>{link.name}</span>
+                          <ExternalLink size={14} className="translate-x-0 group-hover/link:translate-x-0.5 transition-transform" />
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="mt-12 pt-8 border-t border-gray-100">
                   <button
