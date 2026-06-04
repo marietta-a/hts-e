@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { Menu, X, Phone, Mail, MapPin, Globe, MessageCircle, Building2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import logoImage from '../assets/images/htse_logo_1780576282349.png';
 
 const Navbar = () => {
   const { language, setLanguage, t } = useLanguage();
@@ -33,9 +34,10 @@ const Navbar = () => {
             <div className={`relative w-12 h-12 overflow-hidden rounded-lg bg-blue-600 flex items-center justify-center shadow-sm transition-transform hover:scale-105 ${isScrolled ? 'border border-gray-100' : 'border border-white/20'}`}>
               <Building2 className="text-white w-8 h-8" />
               <img 
-                src="/logo.png" 
+                src={logoImage} 
                 alt="HTS-E Logo" 
                 className="absolute inset-0 w-full h-full object-contain bg-white"
+                referrerPolicy="no-referrer"
                 onError={(e) => (e.currentTarget.style.display = 'none')}
               />
             </div>
@@ -143,9 +145,10 @@ const Footer = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center shadow-lg relative overflow-hidden">
                 <Building2 className="text-white w-10 h-10" />
                 <img 
-                  src="/logo.png" 
+                  src={logoImage} 
                   alt="HTS-E Logo" 
                   className="absolute inset-0 w-full h-full object-contain bg-white"
+                  referrerPolicy="no-referrer"
                   onError={(e) => (e.currentTarget.style.display = 'none')}
                 />
               </div>

@@ -4,6 +4,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { motion } from 'motion/react';
 import { Ruler, HardHat, Briefcase, Building2, Truck, ArrowRight, Code, Smartphone, ExternalLink, Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import hymnalImage from '../assets/images/cameroon_hymnal_story_1780574996382.png';
 
 const Services = () => {
   const { t } = useLanguage();
@@ -59,7 +60,7 @@ const Services = () => {
         'Residential Estates',
         'Commercial Space Development'
       ],
-      image: 'https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?auto=format&fit=crop&w=1000&q=60'
+      image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=60'
     },
     {
       id: 'procurement',
@@ -85,7 +86,7 @@ const Services = () => {
         'Multiplatform Mobile Development (iOS & Android)',
         'Open-Source community utility apps & toolkits'
       ],
-      image: '/src/assets/images/cameroon_hymnal_story_1780574996382.png',
+      image: hymnalImage,
       isSoftware: true,
       products: [
         {

@@ -16,7 +16,7 @@ import {
 } from 'lucide-react';
 import { Link, useParams } from 'react-router-dom';
 
-const hymnalImage = '/src/assets/images/cameroon_hymnal_story_1780574996382.png';
+import hymnalImage from '../assets/images/cameroon_hymnal_story_1780574996382.png';
 
 interface BlogPost {
   id: number;
@@ -177,7 +177,7 @@ const Blog = () => {
       date: 'March 10, 2026',
       author: 'Arch. Tabi',
       category: 'Guides',
-      image: 'https://images.unsplash.com/photo-1590644365607-1c5a519a9a37?auto=format&fit=crop&w=1000&q=80',
+      image: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1000&q=80',
       content: (
         <div className="space-y-6 text-gray-700 leading-relaxed text-lg">
           <p>

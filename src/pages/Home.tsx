@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { ArrowRight, CheckCircle2, Building2, HardHat, Ruler, Briefcase, Truck } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logoImage from '../assets/images/htse_logo_1780576282349.png';
 
 const Home = () => {
   const { t } = useLanguage();
@@ -64,9 +65,10 @@ const Home = () => {
             <div className="w-24 h-24 bg-blue-600 rounded-2xl flex items-center justify-center shadow-2xl border border-white/20 relative overflow-hidden">
               <Building2 className="text-white w-12 h-12" />
               <img 
-                src="/logo.png" 
+                src={logoImage} 
                 alt="HTS-E Logo" 
                 className="absolute inset-0 w-full h-full object-contain bg-white"
+                referrerPolicy="no-referrer"
                 onError={(e) => (e.currentTarget.style.display = 'none')}
               />
             </div>
