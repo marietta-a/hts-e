@@ -70,7 +70,9 @@ const translations: Record<Language, any> = {
       realEstate: 'Real Estate Developer',
       realEstateDesc: 'Developing modern residential and commercial spaces for a better tomorrow.',
       procurement: 'Procurement & Supply',
-      procurementDesc: 'Supply of assorted high-quality construction equipment and materials.'
+      procurementDesc: 'Supply of assorted high-quality construction equipment and materials.',
+      softwareDev: 'Software & Mobile Development',
+      softwareDevDesc: 'Building community-centric digital solutions and high-performance software, including top-charting mobile applications.'
     },
     contact: {
       title: 'Contact Us',
@@ -118,7 +120,9 @@ const translations: Record<Language, any> = {
       realEstate: 'Promoteur Immobilier',
       realEstateDesc: 'Développement d\'espaces résidentiels et commerciaux modernes pour un avenir meilleur.',
       procurement: 'Approvisionnement et Fourniture',
-      procurementDesc: 'Fourniture d\'équipements et de matériaux de construction de haute qualité assortis.'
+      procurementDesc: 'Fourniture d\'équipements et de matériaux de construction de haute qualité assortis.',
+      softwareDev: 'Développement de Logiciels & Mobiles',
+      softwareDevDesc: 'Conception de solutions numériques axées sur la communauté et d\'applications mobiles performantes.'
     },
     contact: {
       title: 'Contactez-nous',

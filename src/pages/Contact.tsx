@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PageHeader from '../components/PageHeader';
 import { useLanguage } from '../context/LanguageContext';
 import { motion } from 'motion/react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle2 } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, Code } from 'lucide-react';
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -57,6 +57,12 @@ ${formData.message}
       title: 'Office Location',
       details: ['NEW ROAD NKWEN, BAMENDA'],
       desc: 'Mezam Division, North West Region'
+    },
+    {
+      icon: <Code className="w-6 h-6 text-indigo-600" />,
+      title: 'Software Development Solutions',
+      details: ['akumbom5ma@gmail.com', '+237 671143399'],
+      desc: 'Direct tech & software development service desk'
     },
     {
       icon: <Clock className="w-6 h-6 text-blue-600" />,
